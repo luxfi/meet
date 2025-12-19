@@ -7,15 +7,12 @@
   "private": true,
   "description": "Lux Partners Meeting tool",
   "scripts": {
-    "dev": "http-server ./webroot"
+    "dev": "http-server .",
+    "build": "mkdir -p out && cp -r *.html *.png marcus security zach out/ 2>/dev/null || true"
   },
   "keywords": [],
   "dependencies": {
-    "@types/node": "22.10.6",
     "http-server": "^14.1.1"
-  ,
-  "packageManager": "pnpm@10.12.4"
-}
-,
+  },
   "packageManager": "pnpm@10.12.4"
 }
